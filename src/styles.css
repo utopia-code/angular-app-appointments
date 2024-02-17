@@ -8,3 +8,16 @@ body {
     background-size: cover;
     height: 100vh;
 }
+
+
+.btn-primary {
+    --bs-btn-bg: #134E5E;
+    --bs-btn-border-color: #134E5E;
+    --bs-btn-hover-bg: #2e6967;
+    --bs-btn-hover-border-color: #2e6967;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-bg: #2e6967;
+    --bs-btn-active-border-color: #134E5E;
+    --bs-btn-disabled-bg: #134E5E;
+    --bs-btn-disabled-border-color: #134E5E;
+}
