@@ -1,0 +1,16 @@
+<div *ngIf="list.length === 0" class="card bg-light">
+    <div class="card-body">
+        <h5 class="card-title text-center">There are any appointments to show</h5>
+    </div>
+</div>
+
+<div *ngFor="let appointment of list; let i = index" class="card bg-light mb-2">
+    <div class="card-body">
+        <p class="card-text"><span>Name: </span>{{ appointment.name }}</p>
+        <p class="card-text"><span>Date: </span>{{ appointment.date }}</p>
+        <p class="card-text"><span>Time: </span>{{ appointment.time }}</p>
+        <p class="card-text"><span>Sym: </span>{{ appointment.symptoms }}</p>
+
+        <button class="btn btn-danger btn-block" (click)="deleteCard(i)">Delete</button>
+    </div>
+</div>
